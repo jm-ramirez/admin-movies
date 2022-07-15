@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { GuardarEnStorage } from '../helpers/GuardarEnStorage';
 
-export const Crear = () => {
+export const Crear = ({setListadoState}) => {
     const tituloComponente = "Añador película";
     
     const [peliState, setPeliState] = useState({
@@ -25,6 +25,11 @@ export const Crear = () => {
         };
         //Guardar estado
         setPeliState(peli);
+
+        //Actualizar el estado del listado principal
+        setListadoState(elementos => {            
+            return elementos ? [...elementos, peli] : [peli];
+        });
 
         //Guardar en el almacenamiento local
         GuardarEnStorage("pelis", peli);
