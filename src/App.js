@@ -36,7 +36,7 @@ function App() {
 
             {/*Barra lateral*/}
             <aside className="lateral">
-                <Search/>
+                <Search listState={listState} setListState={setListState}/>
                 <Create setListState={setListState} />            
             </aside>
 
