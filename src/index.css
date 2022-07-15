@@ -104,7 +104,7 @@ body {
   flex-grow: 1;
 }
 
-.peli-item {
+.movie-item {
   flex-grow: 1;
   background: white;
   border-radius: 10px;
@@ -134,15 +134,15 @@ input[type="button"] {
   transition: all 300ms;
 }
 
-.peli-item .edit {
+.movie-item .edit {
   margin-right: 7px;
 }
 
-.peli-item .edit:hover {
+.movie-item .edit:hover {
   background: #e77b00;
 }
 
-.peli-item .delete:hover {
+.movie-item .delete:hover {
   background: #9b0202;
 }
 
@@ -214,7 +214,7 @@ input[type="button"] {
     align-items: center;
   }
 
-  .peli-item {
+  .movie-item {
     width: 80%;
   }
 }
